@@ -21,6 +21,8 @@ namespace MensajesLibrary
         public static string Mensaje { get; set; }
         public static string TituloMensaje { get; set; }
         public int tiempo { get; set; }
+
+
         public enum MessageBoxResult
         {
             Yes,
@@ -78,6 +80,8 @@ namespace MensajesLibrary
 
         public MessageBoxResult ShowMessage(string Tipo, string Message, string TituloMensaje, int tiempo = 0, bool contador = false)
         {
+            //InitializeComponent();
+
             pbInfo.Visible = false;
             pbError.Visible = false;
             pbQue.Visible = false;
@@ -163,6 +167,8 @@ namespace MensajesLibrary
 
         public MessageBoxResult ShowMessage(MessageType messageType, string Message)
         {
+            /*InitializeComponent(); */
+
             pbInfo.Visible = false;
             pbError.Visible = false;
             pbQue.Visible = false;
@@ -251,6 +257,8 @@ namespace MensajesLibrary
 
         public MessageBoxResult ShowMessage(MessageType messageType, string Message, string TituloMensaje)
         {
+            //InitializeComponent();
+
             pbInfo.Visible = false;
             pbError.Visible = false;
             pbQue.Visible = false;
@@ -338,6 +346,8 @@ namespace MensajesLibrary
 
         public MessageBoxResult ShowMessage(MessageType messageType, string Message, string TituloMensaje, int tiempo = 0, bool contador = false)
         {
+            //InitializeComponent();
+
             pbInfo.Visible = false;
             pbError.Visible = false;
             pbQue.Visible = false;
@@ -359,12 +369,14 @@ namespace MensajesLibrary
                 FormBorderStyle = FormBorderStyle.None,
                 StartPosition = FormStartPosition.CenterScreen,
                 Size = new Size(575, 351),
-                //BackColor = Color.FromArgb(240, 240, 240),
                 ShowInTaskbar = false,
                 TopMost = true
             };
 
             this.Dock = DockStyle.Fill;
+
+
+           
             _containerForm.Controls.Add(this);
 
 
@@ -426,6 +438,8 @@ namespace MensajesLibrary
 
         public Task<MessageBoxResult> ShowMessageAsync(Control parent, string Tipo, string Message, string TituloMensaje, int tiempo = 0, bool contador = false)
         {
+            //InitializeComponent();
+
             _tcs = new TaskCompletionSource<MessageBoxResult>();
 
             pbInfo.Visible = false;
@@ -442,8 +456,17 @@ namespace MensajesLibrary
 
             this.lblMessage.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblMessage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            
-           
+
+            // Crear formulario contenedor para simular una ventana modal
+            _containerForm = new Form
+            {
+                FormBorderStyle = FormBorderStyle.None,
+                StartPosition = FormStartPosition.CenterScreen,
+                Size = new Size(575, 351),
+                ShowInTaskbar = false,
+                TopMost = true
+            };
+
 
             this.Location = new Point(
                (parent.ClientSize.Width - this.Width) / 2,
@@ -515,8 +538,6 @@ namespace MensajesLibrary
             timeRemaining = startTimeInSeconds;
             countdownTimer.Start(); // Iniciar el temporizador
         }
-
-      
 
         private void CountdownTimer_Tick(object sender, EventArgs e)
         {

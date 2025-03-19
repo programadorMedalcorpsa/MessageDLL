@@ -217,5 +217,10 @@ namespace WindowsFormsApp1
             MsgBoxCtrl.MessageBoxResult result = msgBoxCtrl.ShowMessage(MsgBoxCtrl.MessageType.Error, MsjBox, Titulo);
             //MsgBoxCtrl.MessageBoxResult result = msgBoxCtrl.ShowMessage(MsgBoxCtrl.MessageType.Error, MsjBox, Titulo, Timer, false);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

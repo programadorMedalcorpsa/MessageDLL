@@ -7,8 +7,8 @@
     <ProjectGuid>{199AA85C-1191-4A89-B319-76D64B406CD0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MensajesLibrary</RootNamespace>
-    <AssemblyName>MensajesLibrary</AssemblyName>
+    <RootNamespace>Liris_MenssageDLL</RootNamespace>
+    <AssemblyName>Liris_MenssageDLL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

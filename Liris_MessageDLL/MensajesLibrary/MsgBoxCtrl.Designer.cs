@@ -102,7 +102,7 @@
             // 
             // pbStop
             // 
-            this.pbStop.Image = global::MensajesLibrary.Properties.Resources.stop;
+            this.pbStop.Image = global::Liris_MenssageDLL.Properties.Resources.stop;
             this.pbStop.Location = new System.Drawing.Point(7, 7);
             this.pbStop.Name = "pbStop";
             this.pbStop.Size = new System.Drawing.Size(95, 80);
@@ -133,7 +133,7 @@
             // 
             // pbInfo
             // 
-            this.pbInfo.Image = global::MensajesLibrary.Properties.Resources.info;
+            this.pbInfo.Image = global::Liris_MenssageDLL.Properties.Resources.info;
             this.pbInfo.Location = new System.Drawing.Point(7, 7);
             this.pbInfo.Name = "pbInfo";
             this.pbInfo.Size = new System.Drawing.Size(95, 80);
@@ -144,7 +144,7 @@
             // 
             // pbQue
             // 
-            this.pbQue.Image = global::MensajesLibrary.Properties.Resources.question;
+            this.pbQue.Image = global::Liris_MenssageDLL.Properties.Resources.question;
             this.pbQue.Location = new System.Drawing.Point(7, 7);
             this.pbQue.Name = "pbQue";
             this.pbQue.Size = new System.Drawing.Size(95, 80);
@@ -155,7 +155,7 @@
             // 
             // pbWar
             // 
-            this.pbWar.Image = global::MensajesLibrary.Properties.Resources.warning;
+            this.pbWar.Image = global::Liris_MenssageDLL.Properties.Resources.warning;
             this.pbWar.Location = new System.Drawing.Point(7, 7);
             this.pbWar.Name = "pbWar";
             this.pbWar.Size = new System.Drawing.Size(95, 80);
@@ -166,7 +166,7 @@
             // 
             // pbError
             // 
-            this.pbError.Image = global::MensajesLibrary.Properties.Resources.error;
+            this.pbError.Image = global::Liris_MenssageDLL.Properties.Resources.error;
             this.pbError.Location = new System.Drawing.Point(7, 7);
             this.pbError.Name = "pbError";
             this.pbError.Size = new System.Drawing.Size(95, 80);

@@ -89,17 +89,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="OposPOSPrinter_CCO">
-      <Guid>{CCB90150-B81E-11D2-AB74-0040054C3719}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\MensajesLibrary\Liris_MenssageDLL.csproj">
       <Project>{199aa85c-1191-4a89-b319-76d64b406cd0}</Project>
       <Name>Liris_MenssageDLL</Name>
